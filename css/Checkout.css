@@ -1,0 +1,573 @@
+:root {
+  --SMALL-TEXT: 0.7rem;
+  --SMALL-HEADING-TEXT: 1.3rem;
+  --LIGHT-BOLD-WEIGHT: 700;
+}
+
+/* -------- || HEADER */
+header {
+  background-color: var(--WHITE-COLOR);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 30px #00000026;
+}
+
+/* EVERYTHING IS INSIDE THIS CONTAINER */
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --------SETTING LOGO AND NAVIGATION BAR CONAINER--------- */
+
+.logo-navbar-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 4em;
+  gap: 3em;
+}
+
+.logo-navbar-container i {
+  /* arrow-head-down of first two nav links */
+  font-size: 0.8rem;
+  margin-left: 0.3em;
+}
+
+.navigation-bar > ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.navigation-bar ul li a {
+  transition: var(--TRANSITION);
+  color: var(--GREY-COLOR);
+}
+
+.navigation-bar ul li a:hover {
+  color: var(--BLACK-COLOR);
+}
+
+.bar-icon-button {
+  background-color: var(--WHITE-COLOR);
+  border: 0;
+  padding: 1em;
+}
+
+/* ------SETTING 2 DROP-DOWN MENUS-------- */
+
+.navigation-bar .dropdown-1-container {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 7em;
+  background-color: white;
+  box-shadow: 0px 0px 1px #d9d9d9;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--TRANSITION);
+}
+
+.navigation-bar .dropdown-1 .dropdown-1-container .list {
+  border-left: var(--BORDER);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.navigation-bar .dropdown-1 .dropdown-1-container .list li .dropdown-1-heading {
+  border-bottom: var(--BORDER);
+  letter-spacing: 3px;
+  padding: 1em;
+}
+
+.navigation-bar .dropdown-1 .dropdown-1-container .list li a {
+  display: block;
+  width: 100%;
+  padding: 1em;
+}
+
+.navigation-bar .dropdown-1-container figure {
+  height: auto;
+  width: 100%;
+}
+
+.navigation-bar .dropdown-1:hover .dropdown-1-container {
+  box-shadow: 0px 0px 0.7px 0px;
+  background-color: var(--WHITE-COLOR);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 5.5em;
+  visibility: visible;
+  opacity: 1;
+  border: var(--BORDER);
+}
+
+.dropdown-2{position: relative;}
+
+.navigation-bar .dropdown-2 .dropdown-2-container {
+  box-shadow: 0px 0px 1px #d9d9d9;
+  position: absolute;
+  background-color: white;
+  top: 2em;
+  left: -0.5em;
+  border: var(--BORDER);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--TRANSITION);
+}
+
+.navigation-bar .dropdown-2 .dropdown-2-container li a {
+  width: 10em;
+  font-size: 0.9rem;
+  padding: 0.7em 1em;
+  transition: var(--TRANSITION);
+  border-top: 1px solid rgba(242,244,248,.7);
+  display: block;
+}
+
+.navigation-bar .dropdown-2:hover .dropdown-2-container {
+  background-color: var(--WHITE-COLOR);
+  box-shadow: 0px 0px 1px #d9d9d9;
+  display: block;
+  top: 1.3em;
+  left: -0.5;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ----------------------- */
+
+/* --------SETTING SEARCH-BAR AND ICONS CONAINER--------- */
+
+.searchbar-and-icons-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-button {
+  border: none;
+  border-left: var(--BORDER);
+  background-color: var(--WHITE-COLOR);
+  padding: 2em 1em;
+}
+
+/* to remove 'x' when something is typed */
+.search-container input::-webkit-search-cancel-button {
+  display: none;
+}
+
+/* to style placeholder of search-bar .use ::placeholder */
+.search-container input::placeholder {
+  font-size: 0.85rem;
+  color: var(--GREY-COLOR);
+}
+
+#search {
+  width: 170px;
+  transition: var(--TRANSITION);
+}
+
+#search:focus {
+  font-size: 1rem;
+  width: 350px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-container span {
+  padding: 2em;
+  transition: var(--TRANSITION);
+  border-left: 1px solid #e0dcdc;
+  align-self: center;
+}
+
+.icon-container span:nth-child(3) {
+  position: relative;
+}
+
+.icon-container span:nth-child(3)::after {
+  position: absolute;
+  top: 1.2em;
+  right: 1.3em;
+  content: "3";
+  color: var(--BLUE-COLOR);
+  font-weight: 800;
+}
+
+.icon-container img {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-container span:hover {
+  background-color: var(--LIGHT-GREY-COLOR);
+}
+
+/* ---------HEADER ENDED */
+
+/* --------------- || MAIN */
+
+.main-content {
+  margin-top: 5.5em;
+}
+
+.hero {
+  background: linear-gradient(rgb(255 255 255 / 94%), rgb(255 255 255 / 89%)),
+    url(../image/Dresses-image/hero-image.jpg) center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero h2 {
+  padding: 1.7em;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.billing-and-order-container {
+  width: 80%;
+  margin: 5em auto;
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+
+  & h5 {
+    font-size: var(--SMALL-HEADING-TEXT);
+  }
+
+  & label,
+  & li {
+    font-size: var(--SMALL-TEXT);
+  }
+
+  .form-container,
+  .your-order-container {
+    padding-top: 2em;
+  }
+}
+
+.billing-and-order-container .form-container {
+  width: 50%;
+  font-weight: var(--LIGHT-BOLD-WEIGHT);
+
+  .input {
+    padding: 0.7em;
+    width: 100%;
+    outline: 0;
+    height: 42px;
+    border: var(--BORDER);
+    background-color: transparent;
+    transition: var(--TRANSITION);
+
+    &:focus {
+      color: #495057;
+      background-color: #fff;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+  }
+
+  & span {
+    color: blue;
+  }
+
+  .data-box {
+    line-height: 2;
+    margin: 0.5em 0;
+  }
+
+  .first-name-container,
+  .last-name-container {
+    display: inline-block;
+    width: 45%;
+  }
+
+  .last-name-container {
+    margin-left: 3em;
+  }
+
+  .all-checkboxs-container {
+    font-weight: var(--LIGHT-BOLD-WEIGHT);
+    margin-top: 2em;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    width: max-content;
+
+    .individual-checkbox-container {
+      & input[type="checkbox"] {
+        display: none;
+        position: absolute;
+      }
+
+      & label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          width: 1.4em;
+          height: 1.4em;
+          margin-right: 0.5em;
+          border-radius: 0.25rem;
+          background-color: #dee2e6;
+          border: 1px solid white;
+        }
+      }
+
+      & input[type="checkbox"]:checked + label::before {
+        content: "\2714";
+        color: white;
+        font-size: var(--SMALL-TEXT);
+        background-color: lightskyblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 2px solid lightskyblue;
+        font-weight: var(--BOLD-FONT);
+      }
+      & input[type="checkbox"]:active + label::before {
+        background-color: lightskyblue;
+      }
+    }
+  }
+}
+
+.billing-and-order-container .your-order-container {
+  width: 40%;
+  height: fit-content;
+  padding: 2em;
+  line-height: 2;
+  border: var(--BORDER);
+  font-size: var(--SMALL-TEXT);
+  font-weight: var(--LIGHT-BOLD-WEIGHT);
+
+  .heading span {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--GREY-COLOR);
+  }
+
+  & li {
+    border-bottom: var(--BORDER);
+    padding: 1.3em 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .all-payment-method-container {
+    margin: 3em 3em;
+  }
+
+  .individual-payment-method-container {
+    margin: 1em 0em;
+
+    & ul li {
+      padding: 1em 0;
+    }
+
+    & label {
+      letter-spacing: 1.2px;
+      font-weight: var(--BOLD-FONT);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        width: 0.8em;
+        height: 0.8em;
+        border: 2px solid var(--GREY-COLOR);
+        margin-right: 0.5em;
+        border-radius: 20px;
+      }
+    }
+
+    & input[type="radio"] {
+      display: none;
+    }
+
+    & p {
+      padding: 1em;
+      font-size: 0.75rem;
+      color: var(--GREY-COLOR);
+      display: none;
+    }
+
+    & input:checked ~ p {
+      display: block;
+    }
+  }
+  .place-order-button-container {
+    margin-bottom: 2em;
+
+    & a {
+      padding: 1.5em 3em;
+    }
+  }
+}
+
+/* ------------- ||FOOTER */
+.footer-content {
+  background-color: #252525;
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6em;
+  margin-top: 5em;
+}
+
+.row {
+  display: flex;
+  margin: 0em 8em;
+  align-items: flex-start;
+  gap: 8em;
+}
+
+.row a {
+  transition: var(--TRANSITION);
+  color: var(--GREY-COLOR);
+}
+
+.row a:hover {
+  color: var(--WHITE-COLOR);
+}
+
+.logo-and-three-links {
+  display: flex;
+  gap: 3em;
+  width: 50%;
+}
+
+.logo-and-three-links nav ul {
+  display: flex;
+}
+
+.logo-and-three-links nav ul li {
+  margin: 0 1em;
+}
+
+.six-links {
+  display: flex;
+  font-size: 0.8rem;
+  gap: 10em;
+  width: 50%;
+}
+
+.six-links li {
+  padding: 0.5em;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+}
+
+.subscription-and-icons-container {
+  display: flex;
+  margin: 0em 8em;
+  align-items: center;
+  gap: 8em;
+}
+
+.subscription-form {
+  width: 50%;
+  position: relative;
+}
+
+#website-email {
+  padding: 0.4em;
+  background: none;
+  border: none;
+  border-bottom: var(--BORDER);
+  color: var(--LIGHT-GREY-COLOR);
+  width: 62%;
+}
+
+.subscription-form::before {
+  content: "SUBSCRIBE";
+  font-size: 0.7rem;
+  color: var(--WHITE-COLOR);
+  position: relative;
+  bottom: 40px;
+  font-weight: 900;
+}
+.subscription-form button {
+  position: relative;
+  background: #252525;
+  border: none;
+  color: var(--LIGHT-GREY-COLOR);
+  right: 20px;
+}
+
+.subscription-form button:active {
+  border: var(--BORDER);
+}
+
+.icons {
+  width: 50%;
+}
+
+.icons span i {
+  color: var(--GREY-COLOR);
+  margin: 0em 0.3em;
+}
+
+.icons span:hover i {
+  color: var(--WHITE-COLOR);
+  transition: var(--TRANSITION);
+}
+
+.icons span a[data-title] {
+  position: relative;
+}
+
+.icons span a:hover::before {
+  content: attr(data-title);
+  display: block;
+  width: fit-content;
+  background-color: black;
+  color: white;
+  position: absolute;
+  padding: 0.5em;
+  bottom: 1.6em;
+  left: -0.7em;
+}
+
+/* ------------FOOTER ENDED-------------- */
+
+.scrollup {
+  position: fixed;
+  right: 5em;
+  bottom: 5em;
+}
+
+.scrollup a {
+  background-color: var(--PINKISH-RED-COLOR);
+  color: white;
+  padding: 0.8em;
+}

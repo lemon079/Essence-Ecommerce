@@ -1,0 +1,94 @@
+/* ----- CSS RESET ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  scroll-snap-type: y mandatory;
+}
+
+::-webkit-scrollbar {
+  border-radius: 50px;
+  background-color: var(--LIGHT-GREY-COLOR);
+  width: 0.8em;
+  height: 0.8em;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #8080803d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6563638f;
+}
+
+/* ------VARIABLES */
+:root {
+  --BORDER: 1px solid #e3e3e3;
+  --LIGHT-GREY-COLOR: #cac3c34d;
+  --GREY-COLOR: #787878;
+  --WHITE-COLOR: white;
+  --BLACK-COLOR: #000;
+  --BLUE-COLOR: blue;
+  --RED-COLOR: red;
+  --PINKISH-RED-COLOR: #dc0345;
+  --TRANSITION: all 0.3s ease;
+  --BOLD-FONT: 800;
+  --LIGHT-BOLD-FONT: 600;
+  --SMALLFSIZE: 0.75rem;
+  --LETTER-SPACING: 0.4px;
+}
+
+.no-border-and-outline {
+  border: 0;
+  outline: none;
+}
+
+.small-fsize {
+  font-size: 0.8rem;
+}
+
+.fsize {
+  font-size: 1rem;
+}
+
+.heading-fsize {
+  font-size: 3rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.button-styling {
+  background-color: var(--BLUE-COLOR);
+  color: white;
+  font-weight: 800;
+  background-color: var(--BLUE-COLOR);
+  color: var(--WHITE-COLOR);
+  padding: 1em 4em;
+  transition: var(--TRANNSITION);
+}
+
+.pink-hover:hover{
+    background-color: var(--PINKISH-RED-COLOR);
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+.invert {
+  filter: invert(1);
+}

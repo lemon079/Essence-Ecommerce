@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essence - Fashion Template</title>
+    <link rel="stylesheet" href="../css/Checkout.css" />
+    <link rel="stylesheet" href="../css/utility.css" />
+    <script src="https://kit.fontawesome.com/e89937399a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-navbar-container">
+                <!-- <button class="bar-icon-button cursor-pointer"><i class="fas fa-bars fa-xl" style="color: #000000;"></i></button>  -->
+                <figure>
+                    <a href="#"><img src="../image/logo.png" alt="logo" /></a>
+                </figure>
+                <nav class="navigation-bar">
+                    <ul class="fsize no-list-style">
+                        <li class="dropdown-1">
+                            <a href="#" class="no-text-decoration">Shop<i class="fa fa-angle-down"></i></a>
+                            <div class="dropdown-1-container">
+                                <ul class=" no-list-style list">
+                                    <li>
+                                        <p class="dropdown-1-heading">
+                                            Women's Collection
+                                        </p>
+                                    </li>
+                                    <li><a href="#" class="no-text-decoration">Dresses</a></li>
+                                    <li>
+                                        <a href="#" class="no-text-decoration">Blouses & Shirts</a>
+                                    </li>
+                                    <li><a href="#" class="no-text-decoration">T-Shirts</a></li>
+                                    <li><a href="#" class="no-text-decoration">Rampers</a></li>
+                                    <li>
+                                        <a href="#" class="no-text-decoration">Bra & Panties</a>
+                                    </li>
+                                </ul>
+
+                                <ul class=" no-list-style list">
+                                    <li>
+                                        <p class="dropdown-1-heading">Men's Collection</p>
+                                    </li>
+                                    <li><a href="#" class="no-text-decoration">T-Shirts</a></li>
+                                    <li><a href="#" class="no-text-decoration">Polo</a></li>
+                                    <li><a href="#" class="no-text-decoration">Shirts</a></li>
+                                    <li><a href="#" class="no-text-decoration">Jackets</a></li>
+                                    <li><a href="#" class="no-text-decoration">Trench</a></li>
+                                </ul>
+
+                                <ul class=" no-list-style list">
+                                    <li>
+                                        <p class="dropdown-1-heading">Kid's Collection</p>
+                                    </li>
+                                    <li><a href="#" class="no-text-decoration">Dresses</a></li>
+                                    <li><a href="#" class="no-text-decoration">Shirts</a></li>
+                                    <li><a href="#" class="no-text-decoration">T-shirts</a></li>
+                                    <li><a href="#" class="no-text-decoration">Jackets</a></li>
+                                    <li><a href="#" class="no-text-decoration">Trench</a></li>
+                                </ul>
+
+                                <figure>
+                                    <img src="../image/big-dropdown-image.png" alt="bag-image" width="350" />
+                                </figure>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-2">
+                            <a href="#" class="no-text-decoration">Pages<i class="fa fa-angle-down"></i></a>
+                            <div class="dropdown-2-container">
+                                <ul class=" no-list-style">
+                                    <li><a href="../html/Home.html" class="no-text-decoration">Home</a></li>
+                                    <li><a href="../html/Dresses.html" class="no-text-decoration">Shop</a></li>
+                                    <li><a href="../html/Add-to-cart.html" class="no-text-decoration">Product
+                                            Details</a></li>
+                                    <li><a href="../html/Checkout.html" class="no-text-decoration">Checkout</a></li>
+                                    <li><a href="../html/blog.html" class="no-text-decoration">Blog</a></li>
+                                    <li>
+                                        <a href="../html/Single-Blog.html" class="no-text-decoration">Single Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/Regular-Page.html" class="no-text-decoration">Regular Page</a>
+                                    </li>
+                                    <li><a href="../html/Contact-Us.html" class="no-text-decoration">Contact</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="../html/blog.html" class="no-text-decoration">Blog</a></li>
+                        <li>
+                            <a href="../html/Contact-Us.html" class="no-text-decoration">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="searchbar-and-icons-container">
+                <div class="search-container">
+                    <button type="submit" class="search-button">
+                        <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                    </button>
+                    <input type="search" name="search" id="search" placeholder="Type for search"
+                        class="no-border-and-outline" />
+                </div>
+
+                <div class="icon-container">
+                    <span class="cursor-pointer"><img src="../icon/heart.svg" alt="heart" /></span>
+                    <span class="cursor-pointer"><img src="../icon/user.svg" alt="user" /></span>
+                    <span class="cursor-pointer"><img src="../icon/shopping-cart.svg" alt="cart" /></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <section class="hero">
+                <h2>CHECKOUT</h2>
+            </section>
+            <section class="billing-and-order-container">
+            <article class="form-container">
+                <form action="backend.php" method="get">
+                    <h5>Billing Address</h5>
+                    <div class="first-name-container | data-box">
+                        <label for="fname">FIRST NAME <span>*</span></label>
+                            <input class="input" type="text" id="fname" name="fname" required>
+                    </div>
+                    <div class="last-name-container | data-box">
+                        <label for="lname">LAST NAME <span>*</span></label>
+                            <input class="input" type="text" id="lname" name="lname" required>
+                    </div>
+                    <div class="company-name-container | data-box">
+                        <label for="compname">COMPANY NAME</label>
+                        <input class="input" type="text" name="compname" id="compname">
+                    </div>
+                    <div class="address-container | data-box">
+                        <label for="">ADDRESS <span>*</span></label>
+                        <input class="input" type="text" name="address" id="address" required>
+                    </div>
+                    <div class="postcode-container | data-box">
+                        <label for="postcode">POSTCODE <span>*</span></label>
+                        <input class="input" type="number" name="postcode" id="postcode" required>
+                    </div>
+                    <div class="town-container | data-box">
+                        <label for="town">TOWN/CITY <span>*</span></label>
+                        <input class="input" type="text" name="town" id="town" required>
+                    </div>
+                    <div class="province-container | data-box">
+                        <label for="province">PROVINCE <span>*</span></label>
+                        <input class="input" type="text" name="province" id="province" required>
+                    </div>
+                    <div class="phone-number-container | data-box">
+                        <label for="phone-number">PHONE NO <span>*</span></label>
+                        <input class="input" type="tel" name="phone-number" id="phone-number" required>
+                    </div>
+                    <div class="email-container | data-box">
+                            <label for="user-email">EMAIL ADDRESS <span>*</span></label>
+                            <input class="input" type="email" name="user-email" id="user-email" required>
+                        </div>
+                    <div class="all-checkboxs-container">
+                        <div id="term-condition-container" class="individual-checkbox-container">
+                            <input type="checkbox" name="terms-conditions" id="terms-conditions">
+                            <label for="terms-conditions">TERMS AND CONDITIONS</label>
+                        </div>
+                        <div id="create-account-container" class="individual-checkbox-container">
+                            <input type="checkbox" name="create-account" id="create-account">
+                            <label for="create-account">CREATE AN ACCOUNT</label>
+                        </div>
+                        <div id="subscribe-newsletter-container" class="individual-checkbox-container">
+                            <input type="checkbox" name="subscribe-newsletter" id="subscribe-newsletter">
+                            <label for="subscribe-newsletter">SUBSCRIBE TO OUR NEWSLETTER</label>
+                        </div>
+                    </div>
+                    </form>
+            </article>
+            <article class="your-order-container">
+                <div class="heading">
+                    <h5>Your Order</h5>
+                    <span>The Details</span>
+                </div>
+                <div class="details">
+                    <ul class="no-list-style">
+                        <li><span>PRODUCTS</span><span>TOTAL</span></li>
+                        <li><span>COCKTAIL YELLOW DRESS</span><span>&dollar;59.90</span></li>
+                        <li><span>SUBTOTAL</span><span>&dollar;59.90</span></li>
+                        <li><span>SHIPPING</span><span>FREE</span></li>
+                        <li><span>TOTAL</span><span>&dollar;59.90</span></li>
+                    </ul>
+                </div>
+                <div class="all-payment-method-container">
+                    <div class="individual-payment-method-container">
+                        <input type="radio" name="method" id="method1">
+                        <label for="method1">PAYPAL</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quis in veritatis officia inventore, tempore provident dignissimos.</p>
+                    </div>
+                    
+                    <div class="individual-payment-method-container">
+                        <input type="radio" name="method" id="method2">
+                        <label for="method2">CASH ON DELIVERY</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integ er bibendum sodales arcu id te mpus. Ut consectetur lacus.</p>
+                    </div>
+                    <div class="individual-payment-method-container">
+                        <input type="radio" name="method" id="method3">
+                        <label for="method3">CREDIT CARD</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integ er bibendum sodales arcu id te mpus. Ut consectetur lacus.</p>
+                    </div>
+                    <div class="individual-payment-method-container">
+                        <input type="radio" name="method" id="method4">
+                        <label for="method4">DIRECT BANK STATEMENT</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cum autem eveniet saepe fugit, impedit magni.</p>
+                    </div>
+                </div>
+                <div class="place-order-button-container"><a href="#" class="no-text-decoration | button-styling | pink-hover">PLACE ORDER</a>
+                </div>
+            </article>
+        </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <section class="footer-content">
+            <div class="row">
+                <div class="logo-and-three-links">
+                    <figure>
+                        <a href="#"><img src="../image/logo.png" alt="logo" class="invert" /></a>
+                    </figure>
+                    <nav>
+                        <ul class="no-list-style">
+                            <li><a href="#" class="no-text-decoration">Shop</a></li>
+                            <li><a href="#" class="no-text-decoration">Blog</a></li>
+                            <li><a href="#" class="no-text-decoration">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="six-links" class="small-fsize">
+                    <div class="links">
+                        <nav>
+                            <ul class="no-list-style">
+                                <li>
+                                    <a href="#" class="no-text-decoration">Order Status</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="no-text-decoration">Shipping and Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="no-text-decoration">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="links">
+                        <nav>
+                            <ul class="no-list-style">
+                                <li>
+                                    <a href="#" class="no-text-decoration">Payment Options</a>
+                                </li>
+                                <li><a href="#" class="no-text-decoration">Guides</a></li>
+                                <li>
+                                    <a href="#" class="no-text-decoration">Terms of Use</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscription-and-icons-container">
+                <div class="subscription-form">
+                    <form action="backend.php" method="get">
+                        <input type="email" name="website-email" id="website-email" placeholder="Your email here" />
+                        <button type="submit" class="cursor-pointer">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="icons">
+                    <span><a href="#" data-title="FaceBook"><i class="fa-brands fa-facebook-f fa-lg"></i></a></span>
+                    <span><a href="#" data-title="Instagram"><i class="fa-brands fa-instagram fa-lg"></i></a></span>
+                    <span><a href="#" data-title="Twitter"><i class="fa-brands fa-twitter fa-lg"></i></a></span>
+                    <span><a href="#" data-title="Youtube"><i class="fa-brands fa-youtube fa-lg"></i></a></span>
+                    <span><a href="#" data-title="Pinterest"><i class="fa-brands fa-pinterest fa-lg"></i></a></span>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div class="scrollup">
+        <a href="#"><i class="fa fa-angle-up"></i></a>
+    </div>
+</body>
+
+</html>
